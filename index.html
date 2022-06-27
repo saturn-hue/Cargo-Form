@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Cargo Form</title>
+</head>
+<body>
+    
+    <form  action="/action_page.php" accept="Registration Form" method="post" name="students_form" id="students_form">
+        <fieldset class="main">
+            <button id="student-info">Passenger Cargo  Informations</button><br>
+            <label for="fname">FirstName </label>
+            <input type="text"  id="name" placeholder="please enter first-name" required>
+            <label for="mname">MiddleName</label>
+            <input type="text" id="mid-name" placeholder="please enter mid-name" required>
+            <label for="lname">LastName </label>
+            <input type="text"  id="lname" placeholder="please enter last-name" required><br>
+            <div>
+                <label>City</label>
+                <input type="text" id="text">
+                <label for="town">Choose  Airport</label>
+                <select id="town" name="airport">
+                    <option value="" selected></option>
+                    <option value="hearthrow">Heathrow</option>
+                    <option value="gatwick">Gatwick</option>
+                    <option value="stansted">Stansted</option>
+                    <option value="manchester">Manchester</option>
+                    <option value="luton">Luton</option>
+                    <option value="liverpool">Liverpool</option>
+                    <option value="birmingham">Birmingham</option>
+                </select>
+                <label for="flight-info">Flight Name & Number</label>
+                <input type="text" id="flight-details" placeholder="flight-details" required>
+                
+            </div>
+            <div class="gender">
+                <label for="gender">Gender :</label> 
+                 <select id="gender" name="gender">
+                <option selected></option>
+                <option >Male</option> 
+               <option>Female</option>
+                  </select><br>
+               </div>
+               <label>Email</label>
+               <input type="email" id="email" placeholder="Enter your email address" required>
+               <label for="cargo">Cargo Details</label>
+               <input type="number" id="number" placeholder="cargo number" required>
+               <label for="start">Start date:</label>
+
+            <input type="date" id="start" name="trip-start"
+             value="" required><br>
+   
+            <label>Address</label><br>
+            <textarea name="message" style="width:500px; height:100px;" required></textarea><br>
+            <div class="col-50">
+                <h3>Payment</h3>
+                <label for="fname">Accepted Cards</label>
+                <div class="icon-container">
+                  <i class="fa fa-cc-visa" style="color:navy;"></i>
+                  <i class="fa fa-cc-amex" style="color:blue;"></i>
+                  <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                  <i class="fa fa-cc-discover" style="color:orange;"></i>
+                </div>
+                <label for="cname">Name on Card</label>
+                <input type="text" id="cname" name="cardname" placeholder="John More Doe" required>
+                <label for="ccnum">Credit card number</label>
+                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+                <label for="expmonth">Exp Month</label>
+                <input type="text" id="expmonth" name="expmonth" placeholder="September" required>
+                <div class="row">
+                  <div class="col-50">
+                    <label for="expyear">Exp Year</label>
+                    <input type="text" id="expyear" name="expyear" placeholder="2018" required>
+                  </div>
+            <input type="submit" value="Submit">
+               <input type="reset" id="address" required>
+               <div class="footer-bottom">
+                &copy; Design by Saturn_B
+            </div>        
+    
+
+            
+
+        </fieldset>
+
+    </form>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
